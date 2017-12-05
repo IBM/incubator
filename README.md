@@ -5,9 +5,11 @@
 
 #### Workflow
 
-* [Propose an IBMCode How-To](#propose-an-ibmcode-how-to)
-* [Approve an IBMCode How-To](#approve-an-ibmcode-how-to)
-* [Create an IBMCode How-To](#create-an-ibmcode-how-to)
+* [Open an issue ](#open-an-issue)
+
+* [Propose an incubator issue](#propose-an-incubator-issue)
+* [Approve an incubator issue](#approve-an-incubator-issue)
+* [Create an incubator issue](#create-an-incubator-issue)
 * [Create a series of IBMCode How-Tos](#create-a-series-of-ibmcode-how-tos)
 * [Review an IBMCode How-To](#review-an-ibmcode-how-to)
 * [Publish an IBMCode How-To](#publish-an-ibmcode-how-to)
@@ -19,23 +21,23 @@
 * [Elements of an IBMCode How-To](#elements-of-an-ibmcode-how-to)
 * [Writing style of an IBMCode How-To](#writing-style-of-an-ibmcode-how-to)
 
-## Propose an IBMCode How-To
+
+## Propose an incubator issue
 
 Person(s) Involved: **How-To Author**
 
-1. Create a [new issue](https://github.ibm.com/IBMCode/howtos/issues/new)
+1. Create a [new issue](https://github.com/IBM/incubator/issues/new)
 
 Ensure the issue states the following:
 
-  * The title of the How-To you want to create
-  * Brief description of the how-to steps
-  * List of technologies you will be highlighting
-  * What the how-to accomplishes
-  * Why this is a good solution
+  * The title of the issue or content you want to create
+  * Brief description of the content or issue  
+  * What the issue accomplishes or the gist of the content
+  * Why this is an acceptable use or resources or dev cycles
   * Who is the target audience
   * Which business unit you report to
 
-> NOTE: Looking to help but don't have an idea? Check out our ['help wanted'](https://github.ibm.com/IBMCode/howtos/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag.
+> NOTE: Looking to help but don't have an idea? Check out our ['help wanted'](https://github.com/IBM/incubator/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag.
 
 ## Approve an IBMCode How-To
 
