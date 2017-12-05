@@ -2,6 +2,13 @@
 
 *IBMCode: Incubator Repository* is a developer driven content platform for hosting all sorts of content-specific work being done inside of IBM Cloud and the Digital Business Group. This will be a central repo to track and complete projects of multiple teams and tribes, fostering cooperation and innovation between teams.
 
+What can you publish through this repository?
+
+1. Code Patterns
+2. Blog posts
+3. How-Tos
+4. Tech Talks
+
 
 #### Workflow
 
@@ -10,16 +17,16 @@
 * [Propose an incubator issue](#propose-an-incubator-issue)
 * [Approve an incubator issue](#approve-an-incubator-issue)
 * [Create an incubator issue](#create-an-incubator-issue)
-* [Create a series of IBMCode How-Tos](#create-a-series-of-ibmcode-how-tos)
-* [Review an IBMCode How-To](#review-an-ibmcode-how-to)
-* [Publish an IBMCode How-To](#publish-an-ibmcode-how-to)
+* [Create a series of incubator issues](#create-a-series-of-incubator-issues)
+* [Review an incubator issue](#review-an-incubator-issue)
+* [Publish an incubator issue](#publish-an-incubator-issue)
 
 #### Style Guide
 
-* [Style and tone of an IBMCode How-To](#style-and-tone-of-an-ibmcode-how-to)
-* [Length of an IBMCode How-To](#length-of-an-ibmcode-how-to)
-* [Elements of an IBMCode How-To](#elements-of-an-ibmcode-how-to)
-* [Writing style of an IBMCode How-To](#writing-style-of-an-ibmcode-how-to)
+* [Style and tone of an incubator issue](#style-and-tone-of-an-incubator-issue)
+* [Length of an incubator issue](#length-of-an-incubator-issue)
+* [Elements of an incubator issue](#elements-of-an-incubator-issue)
+* [Writing style of an incubator issue](#writing-style-of-an-incubator-issue)
 
 
 ## Propose an incubator issue
@@ -39,26 +46,26 @@ Ensure the issue states the following:
 
 > NOTE: Looking to help but don't have an idea? Check out our ['help wanted'](https://github.com/IBM/incubator/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag.
 
-## Approve an IBMCode How-To
+## Approve an incubator issue
 
-Person(s) Involved: **Offering Manager / Developer Advocate**
+Person(s) Involved: **incubator developer admins**
 
-1. If a reviewer believes it to be a good fit they will leave a comment in the issue stating that you are able to begin writing your tutorial. Remember to tag the issue with an "approved" label.
+1. If a reviewer believes it to be a good fit they will leave a comment in the issue stating that you are able to begin working on your issue. If your issue requires assistance, be sure to tag the issue with the "Help Wanted" tag. Remember to tag the issue with an "approved" label.
 
 2. If a reviewer needs additional feedback they will leave questions and comments in the issue and tag it with the "awaiting author feedback" label.
 
-3. In either case, ensure the issue is tagged with the "how-to" label, and assigned to the person who submitted the issue.
+3. In either case, ensure the issue is tagged with the "how-to" label, and assigned to the person who submitted the issue or that it's been assigned to the appropriate person(s)
 
-## Create an IBMCode How-To
+## Create an incubator issue
 
-Person(s) Involved: **How-To Author**
+Person(s) Involved: **incubator author**
 
 1. Fork and clone this repository, create a new branch to work on, and start a new How-To post
 
 ```
-$ git clone git@github.ibm.com:<username>/howtos.git
-$ cd howtos
-$ git checkout -b <name-of-howto>
+$ git clone git@github.com:<username>/incubator.git
+$ cd incubator
+$ git checkout -b <name-of-issue>
 ```
 
 2. Create a new folder in the top level of the project for your new How-To: ``/<name-of-howto>``
