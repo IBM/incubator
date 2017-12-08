@@ -33,6 +33,8 @@ Ensure the issue states the following:
   * Why this is a good solution
   * Who is the target audience
   * Which business unit you report to
+  * Apply the [how-to](https://github.com/IBM/incubator/labels/how-to) label to your issue. 
+
 
 > NOTE: Looking to help but don't have an idea? Check out our ['help wanted'](https://github.com/IBM/incubator/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag.
 

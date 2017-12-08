@@ -4,7 +4,7 @@
 
 #### Workflow
 
-* [Create an Incubator Blog](#propose-an-incubator-blog)
+* [Create an Incubator Blog](#create-an-incubator-blog)
 * [Publish an Incubator Blog](#publish-an-incubator-blog)
 * [When to create an Incubator Blog](#when-to-create-an-incubator-blog)
 * [How to cross-post an Incubator Blog](#how-to-cross-post-an-incubator-blog)
