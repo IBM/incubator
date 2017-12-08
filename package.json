@@ -6,8 +6,11 @@
 		"start": "node app.js"
 	},
 	"dependencies": {
+		"cfenv": "1.0.x",
+		"csslint": "^1.0.5",
+		"eslint": "^4.12.1",
 		"express": "4.15.x",
-		"cfenv": "1.0.x"
+		"html-lint": "^2.4.1"
 	},
 	"repository": {},
 	"engines": {
