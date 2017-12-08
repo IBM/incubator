@@ -25,4 +25,5 @@ Temporary Items
 .apdisk
 
 # Ignore Node.js files
-/node_modules
+node_modules
+package-lock.json
