@@ -23,6 +23,4 @@ tags
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# Ignore Node.js files
 /node_modules
