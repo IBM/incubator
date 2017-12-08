@@ -74,13 +74,17 @@ body, html {
   align-content: center;
   align-items: center;
   width: 226px;
-  height: 400px;
+  height: 360px;
   border-radius: 4px;
   background: white;
   margin: 20px;
   margin-top: 20px;
   margin-bottom: 0px;
   border: 1px solid #dddddd;
+}
+
+.control:hover {
+  border-color: #9855d4;
 }
 
 .description {
@@ -134,4 +138,8 @@ body, html {
   justify-content: center;
   font-size: 13px;
   background: #e5f2f0;
+}
+
+.tile {
+  text-decoration: none;
 }
