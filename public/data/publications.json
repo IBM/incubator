@@ -1,0 +1,34 @@
+[{
+    "type": "pattern",
+    "description": "Patterns are git repos, with working, deployable example code which solves a well described problem",
+    "repo": "https://github.com/IBM/incubator/blob/master",
+    "file": "pattern.md",
+    "icon": "pattern.svg"
+  },
+  {
+    "type": "blog post",
+    "description": "Blog posts are pearls of tech wisdom, published on the IBM Code Blog",
+    "repo": "https://github.com/IBM/incubator/blob/master",
+    "file": "blog.md",
+    "icon": "blog.svg"
+  }, {
+    "type": "how to",
+    "description": "How tos are shorter step by step solution guides",
+    "repo": "https://github.com/IBM/incubator/blob/master",
+    "file": "how-to.md",
+    "icon": "howto.svg"
+  }, {
+    "type": "tech talk",
+    "description": "Tech talks are 30 minute presentations, scheduled and broadcast over the web",
+    "repo": "https://github.com/IBM/incubator/blob/master",
+    "file": "tech-talk.md",
+    "icon": "techtalk.svg"
+  },
+  {
+    "type": "workshop",
+    "description": "Workshops are deeper, multi-hour, or multi-day sessions that aim to instill a level of expertise in a subject",
+    "repo": "https://github.com/IBM/incubator/blob/master",
+    "file": "workshop.md",
+    "icon": "workshop.svg"
+  }
+]
