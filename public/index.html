@@ -9,13 +9,15 @@
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
-<body>
+<body onload="initialize()">
   <div class="container">
     <div class="titlebar">
-      <div class="title">IBM Code</div>
+      <img class="incubator" src="./images/incubator.svg">
+      <div class="title">IBM Code Incubator</div>
     </div>
     <div class="callbar">What do you want to publish?</div>
     <div id="anchor" class="controls"></div>
+    <div class="infoarea" id="infoarea">clicking on a tile leads you through a step by step process for creating content on IBM's GitHub Account</div>
   </div>
 </body>
 <script src="./src/publish.js"></script>
