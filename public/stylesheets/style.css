@@ -1,10 +1,12 @@
 body, html {
-  background-color: #e5f2f0;
+  /*background-color: #e5f2f0;*/
   width: 100%;
   height: 100%;
   margin: 0 auto;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #666666;
+  /*background-image: url(http://developer.ibm.com/code/wp-content/uploads/sites/118/2017/11/community.png);*/
+  /*background-position: 0% -8px;*/
 }
 
 .container {
@@ -17,18 +19,18 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   align-content: center;
   padding: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background: white;
   border-bottom: 1px solid #cce6e2;
 }
 
 .title {
-  color: #008571;
-  font-size: 26px;
+  color: #333;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -39,10 +41,9 @@ body, html {
   align-items: center;
   align-content: center;
   padding: 20px;
-  padding-top: 30px;
   font-size: 20px;
-  font-weight: bold;
-  color: #329d8d;
+  color: #FFFFFF;
+  background: transparent url(https://dw1.s81c.com/code/wp-content/uploads/sites/118/2017/06/header-teal.png) no-repeat 0 0 / cover;
 }
 
 .call {
@@ -65,6 +66,7 @@ body, html {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 20px
 }
 
 .control {
@@ -75,12 +77,12 @@ body, html {
   align-items: center;
   width: 160px;
   height: 160px;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   background: white;
   margin: 20px;
   margin-top: 20px;
   margin-bottom: 0px;
-  border: 1px solid #b2dad4;
+  border: 1px solid #c7c7c7;
 }
 
 .control:hover {
@@ -142,4 +144,17 @@ body, html {
 
 .tile {
   text-decoration: none;
+}
+
+.incubator {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.infoarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 30px;
 }
