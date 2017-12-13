@@ -156,10 +156,12 @@ body, html {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  color: #018571;
 }
 
 .infobox {
   margin: 30px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -175,3 +177,51 @@ body, html {
   color: #018571;
   margin-left: 5px;
 }
+
+.detailbox {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+}
+
+.detailtitle {}
+
+.detailpitch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 20px; */
+  padding: 40px;
+  border: 1px solid #999;
+  border: 1px dotted #c7c7c7;
+}
+
+.detailcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+p {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.detailimage {
+  height: 100px;
+  opacity: 0.7;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.details {
+  text-decoration: none;
+  width: 400px;
+}
+
+.actionbutton {}
