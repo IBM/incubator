@@ -156,5 +156,22 @@ body, html {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+}
+
+.infobox {
   margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.githublink {
+  color: #018571;
+  margin-left: 5px;
 }
