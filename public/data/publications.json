@@ -1,8 +1,8 @@
 [{
     "type": "pattern",
     "description": "Patterns are git repos, with working, deployable example code which solves a well described problem",
-    "repo": "https://github.com/IBM/incubator/blob/master",
-    "file": "pattern.md",
+    "repo": "https://github.com/IBM/incubator/issues",
+    "file": "new?title=<proposed pattern title goes here>&body=Please include details:%0A%0A- [ ] a link to source code, if it exists%0A%0A- [ ] if no code exists, will the submitter produce the code?%0A%0A- [ ] Why is the pattern a good idea?",
     "icon": "pattern.svg"
   },
   {
