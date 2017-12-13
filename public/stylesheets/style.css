@@ -175,3 +175,35 @@ body, html {
   color: #018571;
   margin-left: 5px;
 }
+
+.detailbox {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+}
+
+.detailtitle {}
+
+.detailpitch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  ;
+}
+
+.detailimage {
+  height: 100px;
+  opacity: 0.7;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.details {
+  text-decoration: none;
+  width: 400px;
+}
+
+.actionbutton {}
