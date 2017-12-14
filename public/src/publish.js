@@ -1,3 +1,5 @@
+var url = "https://github.com/IBM/incubator/issues/new?title=<proposed pattern title goes here>&body=Please include details:"
+
 function createTile(publication) {
 
   var anchor = document.getElementById('anchor');
@@ -5,7 +7,22 @@ function createTile(publication) {
   var link = document.createElement('a');
 
   link.className = 'tile';
-  link.href = publication.repo + '/' + publication.file;
+
+  var string ='';
+
+  if( publication.checklist.length > 0 ){
+
+    publication.checklist.forEach(function(item){
+      string =  string + '%0A%0A- [ ] ' + item.comment;
+    })
+
+    url = url + string;
+
+    link.href = url;
+
+  }else{
+    link.href = publication.repo + '/' + publication.file;
+  }
 
   link.innerHTML = '<div class="control">' + '<div class="visual"><img class="image" src="./images/' + publication.icon + '"></div>' + '<div class="type">' + publication.type + '</div>' +
   // '<div class="description">' + publication.description + '</div>' +
