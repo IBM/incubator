@@ -4,146 +4,178 @@
     "repo": "https://github.com/IBM/incubator/blob/master",
     "file": "pattern.md",
     "icon": "pattern.svg",
-    "checklist": [{
-        "order": 1,
-        "comment": "Why is the pattern is a good idea?"
+    "sections": [{
+        "section": 1,
+        "title": "About this pattern",
+        "instruction": "Answer these questions as a comment, then check the boxes prior to proposal review.",
+        "information": "pattern.md",
+        "alert": "",
+        "checklist": [{
+            "order": 1,
+            "comment": "Brief description of your pattern"
+          },
+          {
+            "order": 2,
+            "comment": "Url to your existing repo ( or a not that this is just an idea for now )"
+          },
+          {
+            "order": 3,
+            "comment": "Target completion date ( for instance for an event, or product )?"
+          },
+          {
+            "order": 4,
+            "comment": "Add labels for technology ( e.g. Node, Kubernetes, Swift, Watson etc )"
+          },
+          {
+            "order": 5,
+            "comment": "Are you looking for a collaborator to help publish this (y/n)?"
+          }
+        ]
       },
       {
-        "order": 2,
-        "comment": "What is its advocacy potential?"
-      },
-      {
-        "order": 3,
-        "comment": "Is the pattern free to run?"
-      },
-      {
-        "order": 4,
-        "comment": "What is its priority?"
-      },
-      {
-        "order": 5,
-        "comment": "Who will be writing the code?"
-      },
-      {
-        "order": 6,
-        "comment": "Are we inheriting code?"
-      },
-      {
-        "order": 7,
-        "comment": "Is it for a product or release launch?"
-      },
-      {
-        "order": 8,
-        "comment": "Does this pattern fill a gap in our portfolio?"
-      },
-      {
-        "order": 9,
-        "comment": "Does it overlap with our existing portfolio?"
-      },
-      {
-        "order": 10,
-        "comment": "Can we partner up with a client?"
-      },
-      {
-        "order": 11,
-        "comment": "Does this pattern highlight an IBM product advantage vs market product?"
+        "section": 2,
+        "title": "Pattern content",
+        "instruction": "Commit this content prior to publication review.",
+        "information": "pattern.md",
+        "alert": "",
+        "checklist": [{
+            "order": 1,
+            "comment": "Architecture Diagram"
+          },
+          {
+            "order": 2,
+            "comment": "Description - add in readme with the architecture diagram"
+          },
+          {
+            "order": 3,
+            "comment": "Add in additional markdown files such as CONTRIBUTING.MD and MAINTAINERS.MD"
+          },
+          {
+            "order": 4,
+            "comment": "Wiki / Journey Page"
+          },
+          {
+            "order": 5,
+            "comment": "Blog"
+          }
+        ]
       }
     ]
-  },
-  {
-    "type": "blog post",
+  },   
+    {
+    "type": "blog",
     "description": "Blog posts are pearls of tech wisdom, published on the IBM Code Blog",
     "repo": "https://github.com/IBM/incubator/blob/master",
     "file": "blog.md",
     "icon": "blog.svg",
-    "checklist":[]
+    "sections": [{
+      "section": 1,
+      "title": "",
+      "instruction": "",
+      "information": "",
+      "checklist": []
+    }]
   }, {
-    "type": "how to",
+    "type": "how-to",
     "description": "How tos are shorter step by step solution guides",
     "repo": "https://github.com/IBM/incubator/blob/master",
     "file": "how-to.md",
     "icon": "howto.svg",
-    "checklist":[{
-        "order": 1,
-        "comment": "Title of the how-to you want to create"
-      },
-      {
-        "order": 2,
-        "comment": "Brief description of the how-to steps"
-      },
-      {
-        "order": 3,
-        "comment": "List of technologies you will be highlighting"
-      },
-      {
-        "order": 4,
-        "comment": "What the how-to accomplishes"
-      },
-      {
-        "order": 5,
-        "comment": "Why this is a good solution"
-      },
-      {
-        "order": 6,
-        "comment": "Who is the target audience?"
-      },
-      {
-        "order": 7,
-        "comment": "Which business unit you report to"
-      }
-    ]
+    "sections": [{
+      "section": 1,
+      "title": "",
+      "instruction": "",
+      "information": "",
+      "checklist": [{
+          "order": 1,
+          "comment": "Title of the how-to you want to create"
+        },
+        {
+          "order": 2,
+          "comment": "Brief description of the how-to steps"
+        },
+        {
+          "order": 3,
+          "comment": "List of technologies you will be highlighting"
+        },
+        {
+          "order": 4,
+          "comment": "What the how-to accomplishes"
+        },
+        {
+          "order": 5,
+          "comment": "Why this is a good solution"
+        },
+        {
+          "order": 6,
+          "comment": "Who is the target audience?"
+        },
+        {
+          "order": 7,
+          "comment": "Which business unit you report to"
+        }
+      ]
+    }]
   },
   {
-    "type": "tech talk",
+    "type": "tech-talk",
     "description": "Tech talks are 30 minute presentations, scheduled and broadcast over the web",
     "repo": "https://github.com/IBM/incubator/blob/master",
     "file": "tech-talk.md",
     "icon": "techtalk.svg",
-    "checklist":[{
-        "order": 1,
-        "comment": "Does the subject matter lend itself well to a tech talk?"
-      },
-      {
-        "order": 2,
-        "comment": "What is it's advocacy potential?"
-      },
-      {
-        "order": 3,
-        "comment": "Is the pattern or blog the talk is based on free to run?"
-      },
-      {
-        "order": 4,
-        "comment": "Is there code to be written?  Will there be a live demo?"
-      },
-      {
-        "order": 5,
-        "comment": "Are we inheriting code?"
-      },
-      {
-        "order": 6,
-        "comment": "What is its priority?"
-      },
-      {
-        "order": 7,
-        "comment": "Is it for a product or release launch?"
-      },
-      {
-        "order": 8,
-        "comment": "Does this tech talk fill a gap in our portfolio?"
-      },
-      {
-        "order": 9,
-        "comment": "Does it overlap with our existing portfolio?"
-      },
-      {
-        "order": 10,
-        "comment": "Can we partner up with a client?"
-      },
-      {
-        "order": 11,
-        "comment": "Does this tech talk highlight an IBM product advantage vs market products?"
-      }
-    ]
+    "sections": [{
+      "section": 1,
+      "title": "",
+      "instruction": "",
+      "information": "",
+
+      "checklist": [{
+          "order": 1,
+          "comment": "Does the subject matter lend itself well to a tech talk?"
+        },
+        {
+          "order": 2,
+          "comment": "What is it's advocacy potential?"
+        },
+        {
+          "order": 3,
+          "comment": "Is the pattern or blog the talk is based on free to run?"
+        },
+        {
+          "order": 4,
+          "comment": "Is there code to be written?  Will there be a live demo?"
+        },
+        {
+          "order": 5,
+          "comment": "Are we inheriting code?"
+        },
+        {
+          "order": 6,
+          "comment": "What is its priority?"
+        },
+        {
+          "order": 7,
+          "comment": "Is it for a product or release launch?"
+        },
+        {
+          "order": 8,
+          "comment": "Does this tech talk fill a gap in our portfolio?"
+        },
+        {
+          "order": 9,
+          "comment": "Does it overlap with our existing portfolio?"
+        },
+        {
+          "order": 10,
+          "comment": "Can we partner up with a client?"
+        },
+        {
+          "order": 11,
+          "comment": "Does this tech talk highlight an IBM product advantage vs market products?"
+        }
+      ]
+
+    }]
   },
   {
     "type": "workshop",
@@ -151,7 +183,13 @@
     "repo": "https://github.com/IBM/incubator/blob/master",
     "file": "workshop.md",
     "icon": "workshop.svg",
-    "checklist":[]
+    "sections": [{
+      "section": 1,
+      "title": "",
+      "instruction": "",
+      "information": "",
+      "checklist": []
+    }]
   }
 ]
 
