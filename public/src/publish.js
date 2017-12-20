@@ -11,14 +11,14 @@ function createTile(publication) {
   var string ='';
 
   if( publication.checklist.length > 0 ){
-    
-    if( publication.type == "pattern"){
-      string =  string + 'labels=Pattern';
-    }
 
     publication.checklist.forEach(function(item){
       string =  string + '%0A%0A- [ ] ' + item.comment;
     })
+
+    if( publication.type == "pattern"){
+      string =  string + '&labels=Pattern';
+    }
 
     url = url + string;
 
