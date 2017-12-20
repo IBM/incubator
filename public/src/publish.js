@@ -1,4 +1,8 @@
-var url = "https://github.com/IBM/incubator/issues/new?title=<proposed pattern title goes here>&body=Please include details:"
+var url = "https://github.com/IBM/incubator/issues/new?title=<proposed pattern title goes here>&body="
+
+var checkbox = '%0A%0A- [ ] ';
+
+var space = '%0A';
 
 function createTile(publication) {
 
@@ -8,25 +12,27 @@ function createTile(publication) {
 
   link.className = 'tile';
 
-  var string ='';
+  link.href = publication.repo + '/' + publication.file;
 
-  if( publication.checklist.length > 0 ){
-    
-    if( publication.type == "pattern"){
-      string =  string + 'labels=Pattern';
+  /* add label */
+
+  url = url + 'labels=' + publication.type;
+
+  publication.sections.forEach(function(section){
+
+    url = url + space + space + '**' + section.title + '**'  + space + space + '_' + section.instruction + '_';
+
+    if( section.checklist.length > 0 ){
+
+      /* add checkboxes */
+
+      section.checklist.forEach(function(item){
+        url = url + checkbox + item.comment;
+      })
+
+      link.href = url;
     }
-
-    publication.checklist.forEach(function(item){
-      string =  string + '%0A%0A- [ ] ' + item.comment;
-    })
-
-    url = url + string;
-
-    link.href = url;
-
-  }else{
-    link.href = publication.repo + '/' + publication.file;
-  }
+  })
 
   link.innerHTML = '<div class="control">' + '<div class="visual"><img class="image" src="./images/' + publication.icon + '"></div>' + '<div class="type">' + publication.type + '</div>' +
   // '<div class="description">' + publication.description + '</div>' +
