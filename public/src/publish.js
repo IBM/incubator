@@ -1,4 +1,4 @@
-var url = "https://github.com/IBM/incubator/issues/new?title=<proposed pattern title goes here>"
+var url = "https://github.com/IBM/incubator/issues/new?title=<proposed title goes here>"
 
 var checkbox = '%0A%0A- [ ] ';
 
