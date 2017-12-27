@@ -12,23 +12,23 @@
         "alert": "",
         "checklist": [{
             "order": 1,
-            "comment": "Brief description of your pattern"
+            "comment": "a1. Brief description of your pattern"
           },
           {
             "order": 2,
-            "comment": "Url to your existing repo ( or a not that this is just an idea for now )"
+            "comment": "a2. Url to your existing repo ( or a not that this is just an idea for now )"
           },
           {
             "order": 3,
-            "comment": "Target completion date ( for instance for an event, or product )?"
+            "comment": "a3. Target completion date ( for instance for an event, or product )?"
           },
           {
             "order": 4,
-            "comment": "Add labels for technology ( e.g. Node, Kubernetes, Swift, Watson etc )"
+            "comment": "a4. Add labels for technology ( e.g. Node, Kubernetes, Swift, Watson etc )"
           },
           {
             "order": 5,
-            "comment": "Are you looking for a collaborator to help publish this (y/n)?"
+            "comment": "a5. Are you looking for a collaborator to help publish this (y/n)?"
           }
         ]
       },
@@ -40,29 +40,29 @@
         "alert": "",
         "checklist": [{
             "order": 1,
-            "comment": "Architecture Diagram"
+            "comment": "c1. Architecture Diagram"
           },
           {
             "order": 2,
-            "comment": "Description - add in readme with the architecture diagram"
+            "comment": "c2. Description - add in readme with the architecture diagram"
           },
           {
             "order": 3,
-            "comment": "Add in additional markdown files such as CONTRIBUTING.MD and MAINTAINERS.MD"
+            "comment": "c3. Add in additional markdown files such as CONTRIBUTING.MD and MAINTAINERS.MD"
           },
           {
             "order": 4,
-            "comment": "Wiki / Journey Page"
+            "comment": "c4. Wiki / Journey Page"
           },
           {
             "order": 5,
-            "comment": "Blog"
+            "comment": "c5. Blog"
           }
         ]
       }
     ]
   },   
-    {
+  {
     "type": "blog",
     "description": "Blog posts are pearls of tech wisdom, published on the IBM Code Blog",
     "repo": "https://github.com/IBM/incubator/blob/master",
@@ -75,7 +75,8 @@
       "information": "",
       "checklist": []
     }]
-  }, {
+  },
+  {
     "type": "how-to",
     "description": "How tos are shorter step by step solution guides",
     "repo": "https://github.com/IBM/incubator/blob/master",
@@ -83,36 +84,28 @@
     "icon": "howto.svg",
     "sections": [{
       "section": 1,
-      "title": "",
-      "instruction": "",
-      "information": "",
+      "title": "About this how-to",
+      "instruction": "Answer these questions as a comment, then check the boxes prior to proposal review.",
+      "information": "how-to.md",
       "checklist": [{
           "order": 1,
-          "comment": "Title of the how-to you want to create"
+          "comment": "a1. Provide a brief description of the how-to steps"
         },
         {
           "order": 2,
-          "comment": "Brief description of the how-to steps"
+          "comment": "a2. What technologies will you be highlighting?"
         },
         {
           "order": 3,
-          "comment": "List of technologies you will be highlighting"
+          "comment": "a3. What does the how-to accomplish?"
         },
         {
           "order": 4,
-          "comment": "What the how-to accomplishes"
+          "comment": "a4. Why is this a good solution?"
         },
         {
           "order": 5,
-          "comment": "Why this is a good solution"
-        },
-        {
-          "order": 6,
-          "comment": "Who is the target audience?"
-        },
-        {
-          "order": 7,
-          "comment": "Which business unit you report to"
+          "comment": "a5. Who is your target audience?"
         }
       ]
     }]
@@ -125,53 +118,29 @@
     "icon": "techtalk.svg",
     "sections": [{
       "section": 1,
-      "title": "",
-      "instruction": "",
-      "information": "",
+      "title": "About this tech-talk",
+      "instruction": "Answer these questions as a comment, then check the boxes prior to proposal review.",
+      "information": "tech-talk.md",
 
       "checklist": [{
           "order": 1,
-          "comment": "Does the subject matter lend itself well to a tech talk?"
+          "comment": "a1. Does the subject matter lend itself well to a tech talk?"
         },
         {
           "order": 2,
-          "comment": "What is it's advocacy potential?"
+          "comment": "a2. What is it's advocacy potential?"
         },
         {
           "order": 3,
-          "comment": "Is the pattern or blog the talk is based on free to run?"
+          "comment": "a3. Is there code to be written?  Will there be a live demo?"
         },
         {
           "order": 4,
-          "comment": "Is there code to be written?  Will there be a live demo?"
+          "comment": "a4. Are we inheriting code?"
         },
         {
           "order": 5,
-          "comment": "Are we inheriting code?"
-        },
-        {
-          "order": 6,
-          "comment": "What is its priority?"
-        },
-        {
-          "order": 7,
-          "comment": "Is it for a product or release launch?"
-        },
-        {
-          "order": 8,
-          "comment": "Does this tech talk fill a gap in our portfolio?"
-        },
-        {
-          "order": 9,
-          "comment": "Does it overlap with our existing portfolio?"
-        },
-        {
-          "order": 10,
-          "comment": "Can we partner up with a client?"
-        },
-        {
-          "order": 11,
-          "comment": "Does this tech talk highlight an IBM product advantage vs market products?"
+          "comment": "a5. Target completion date ( for instance for an event, or product )?"
         }
       ]
 
