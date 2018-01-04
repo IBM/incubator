@@ -24,5 +24,6 @@ install: true
 before_script:
   - "./tests/test-csslint.sh"
   - "./tests/test-shellcheck.sh"
+  - "./tests/test-yamllint.sh"
 
 script: "$TEST_RUN"
