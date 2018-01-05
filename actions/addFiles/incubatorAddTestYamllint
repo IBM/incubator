@@ -1,0 +1,32 @@
+var request = require('request');
+
+function main(params) {
+  if (params.action == "created" && params.sender.id == 34746072) {
+
+    _url = "https://" + params.gitUsername + ":" + params.gitPersonalToken + "@api.github.com/repos/IBM/" + params.repository.name + "/contents/tests/test-yamllint.sh";
+    
+    options = {
+      url: _url,
+      method: "PUT",
+      headers: {
+        'User-agent': 'curl/7.54.0',
+        'content-type': 'application/json',
+        'Accept': 'application/vnd.github.inertia-preview+json'
+      },
+      body: JSON.stringify({message: "Add yamllint test", content: "IyEvYmluL2Jhc2ggLWUNCg0KIyBzaGVsbGNoZWNrIGRpc2FibGU9U0MxMDkwDQpzb3VyY2UgIiQoZGlybmFtZSAiJDAiKSIvLi4vc2NyaXB0cy9yZXNvdXJjZXMuc2gNCg0KaWYgZmluZCAuIFwoIC1uYW1lICcqLnltbCcgLW8gLW5hbWUgJyoueWFtbCcgXCkgLXByaW50MCB8IHhhcmdzIC1uMSAtMCB5YW1sbGludCAtYyAueWFtbGxpbnQueW1sOyB0aGVuDQogICAgdGVzdF9wYXNzZWQgIiQwIg0KZWxzZQ0KICAgIHRlc3RfZmFpbGVkICIkMCINCmZp"})
+    }      
+     
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        request(options, function(error, response, body) {
+          if (error) {
+            reject(error);
+          }
+          else {
+            resolve({msg: response});
+          }
+        });
+      }, 11000);
+    });
+  }
+}

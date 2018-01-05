@@ -1,0 +1,32 @@
+var request = require('request');
+
+function main(params) {
+  if (params.action == "created" && params.sender.id == 34746072) {
+
+    _url = "https://" + params.gitUsername + ":" + params.gitPersonalToken + "@api.github.com/repos/IBM/" + params.repository.name + "/contents/scripts/resources.sh";
+    
+    options = {
+      url: _url,
+      method: "PUT",
+      headers: {
+        'User-agent': 'curl/7.54.0',
+        'content-type': 'application/json',
+        'Accept': 'application/vnd.github.inertia-preview+json'
+      },
+      body: JSON.stringify({message: "Add resources script", content: "IyEvYmluL2Jhc2gNCg0KIyBUaGlzIHNjcmlwdCBjb250YWlucyBmdW5jdGlvbnMgdXNlZCBieSBtYW55IG9mIHRoZSBzY3JpcHRzIGZvdW5kIGluIHNjcmlwdHMvDQojIGFuZCB0ZXN0cy8uDQoNCnRlc3RfZmFpbGVkKCl7DQogICAgZWNobyAtZSA+JjIgIlwwMzNbMDszMW0kMSB0ZXN0IGZhaWxlZCFcMDMzWzBtIg0KICAgIGV4aXQgMQ0KfQ0KDQp0ZXN0X3Bhc3NlZCgpew0KICAgIGVjaG8gLWUgIlwwMzNbMDszMm0kMSB0ZXN0IHBhc3NlZCFcMDMzWzBtIg0KfQ0KDQppc19wdWxsX3JlcXVlc3QoKXsNCiAgaWYgW1sgIiRUUkFWSVNfUFVMTF9SRVFVRVNUIiAhPSAiZmFsc2UiIF1dOyB0aGVuDQogICAgICBlY2hvIC1lICJcMDMzWzA7MzNtUHVsbCBSZXF1ZXN0IGRldGVjdGVkOyBub3QgcnVubmluZyAkMSFcMDMzWzBtIg0KICAgICAgZXhpdCAwDQogIGZpDQp9"})
+    }      
+     
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        request(options, function(error, response, body) {
+          if (error) {
+            reject(error);
+          }
+          else {
+            resolve({msg: response});
+          }
+        });
+      }, 14000);
+    });
+  }
+}

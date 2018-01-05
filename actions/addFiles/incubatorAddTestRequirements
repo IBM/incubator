@@ -1,0 +1,32 @@
+var request = require('request');
+
+function main(params) {
+  if (params.action == "created" && params.sender.id == 34746072) {
+
+    _url = "https://" + params.gitUsername + ":" + params.gitPersonalToken + "@api.github.com/repos/IBM/" + params.repository.name + "/contents/test-requirements.txt";
+    
+    options = {
+      url: _url,
+      method: "PUT",
+      headers: {
+        'User-agent': 'curl/7.54.0',
+        'content-type': 'application/json',
+        'Accept': 'application/vnd.github.inertia-preview+json'
+      },
+      body: JSON.stringify({message: "Add test-requirements", content: "eWFtbGxpbnQ="})
+    }      
+     
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        request(options, function(error, response, body) {
+          if (error) {
+            reject(error);
+          }
+          else {
+            resolve({msg: response});
+          }
+        });
+      }, 13000);
+    });
+  }
+}
