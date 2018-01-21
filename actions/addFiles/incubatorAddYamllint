@@ -1,0 +1,32 @@
+var request = require('request');
+
+function main(params) {
+  if (params.action == "created" && params.sender.id == 34746072) {
+
+    _url = "https://" + params.gitUsername + ":" + params.gitPersonalToken + "@api.github.com/repos/IBM/" + params.repository.name + "/contents/.yamllint.yml";
+    
+    options = {
+      url: _url,
+      method: "PUT",
+      headers: {
+        'User-agent': 'curl/7.54.0',
+        'content-type': 'application/json',
+        'Accept': 'application/vnd.github.inertia-preview+json'
+      },
+      body: JSON.stringify({message: "Add yamllint config", content: "LS0tDQpydWxlczoNCiAgYnJhY2VzOg0KICAgIG1pbi1zcGFjZXMtaW5zaWRlOiAwDQogICAgbWF4LXNwYWNlcy1pbnNpZGU6IDANCiAgICBtaW4tc3BhY2VzLWluc2lkZS1lbXB0eTogMA0KICAgIG1heC1zcGFjZXMtaW5zaWRlLWVtcHR5OiAwDQogIGJyYWNrZXRzOg0KICAgIG1pbi1zcGFjZXMtaW5zaWRlOiAwDQogICAgbWF4LXNwYWNlcy1pbnNpZGU6IDANCiAgICBtaW4tc3BhY2VzLWluc2lkZS1lbXB0eTogMA0KICAgIG1heC1zcGFjZXMtaW5zaWRlLWVtcHR5OiAwDQogIGNvbG9uczoNCiAgICBtYXgtc3BhY2VzLWJlZm9yZTogMA0KICAgIG1heC1zcGFjZXMtYWZ0ZXI6IDENCiAgY29tbWFzOg0KICAgIG1heC1zcGFjZXMtYmVmb3JlOiAwDQogICAgbWluLXNwYWNlcy1hZnRlcjogMQ0KICAgIG1heC1zcGFjZXMtYWZ0ZXI6IDENCiAgY29tbWVudHM6DQogICAgcmVxdWlyZS1zdGFydGluZy1zcGFjZTogdHJ1ZQ0KICAgIG1pbi1zcGFjZXMtZnJvbS1jb250ZW50OiAyDQogIGNvbW1lbnRzLWluZGVudGF0aW9uOiBlbmFibGUNCiAgZG9jdW1lbnQtZW5kOiBkaXNhYmxlDQogIGRvY3VtZW50LXN0YXJ0Og0KICAgIHByZXNlbnQ6IHRydWUNCiAgZW1wdHktbGluZXM6DQogICAgbWF4OiAyDQogICAgbWF4LXN0YXJ0OiAwDQogICAgbWF4LWVuZDogMA0KICBoeXBoZW5zOg0KICAgIG1heC1zcGFjZXMtYWZ0ZXI6IDENCiAgaW5kZW50YXRpb246DQogICAgc3BhY2VzOiBjb25zaXN0ZW50DQogICAgaW5kZW50LXNlcXVlbmNlczogdHJ1ZQ0KICAgIGNoZWNrLW11bHRpLWxpbmUtc3RyaW5nczogZmFsc2UNCiAga2V5LWR1cGxpY2F0ZXM6IGVuYWJsZQ0KICBsaW5lLWxlbmd0aDoNCiAgICBtYXg6IDgwDQogICAgYWxsb3ctbm9uLWJyZWFrYWJsZS13b3JkczogdHJ1ZQ0KICAgIGFsbG93LW5vbi1icmVha2FibGUtaW5saW5lLW1hcHBpbmdzOiB0cnVlDQogICAgbGV2ZWw6IHdhcm5pbmcNCiAgbmV3LWxpbmUtYXQtZW5kLW9mLWZpbGU6IGVuYWJsZQ0KICBuZXctbGluZXM6DQogICAgdHlwZTogdW5peA0KICB0cmFpbGluZy1zcGFjZXM6IGVuYWJsZQ0KdHJ1dGh5OiBlbmFibGU="})
+    }      
+     
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        request(options, function(error, response, body) {
+          if (error) {
+            reject(error);
+          }
+          else {
+            resolve({msg: response});
+          }
+        });
+      }, 10000);
+    });
+  }
+}

@@ -1,0 +1,32 @@
+var request = require('request');
+
+function main(params) {
+  if (params.action == "created" && params.sender.id == 34746072) {
+
+    _url = "https://" + params.gitUsername + ":" + params.gitPersonalToken + "@api.github.com/repos/IBM/" + params.repository.name + "/contents/.travis.yml";
+    
+    options = {
+      url: _url,
+      method: "PUT",
+      headers: {
+        'User-agent': 'curl/7.54.0',
+        'content-type': 'application/json',
+        'Accept': 'application/vnd.github.inertia-preview+json'
+      },
+      body: JSON.stringify({message: "Add skeleton travis config", content: "LS0tDQpsYW5ndWFnZTogbm9kZV9qcw0Kbm9kZV9qczogbHRzLyoNCg0KYWRkb25zOg0KICBhcHQ6DQogICAgc291cmNlczoNCiAgICAgIC0gZGViaWFuLXNpZA0KICAgIHBhY2thZ2VzOg0KICAgICAgLSBzaGVsbGNoZWNrDQoNCm1hdHJpeDoNCiAgZmFzdF9maW5pc2g6IHRydWUNCg0KZW52Og0KICAtIFRFU1RfUlVOPSJlY2hvIFNvb24iDQoNCmJlZm9yZV9pbnN0YWxsOg0KICAtIHN1ZG8gcGlwIGluc3RhbGwgeWFtbGxpbnQNCg0KaW5zdGFsbDogdHJ1ZQ0KDQpiZWZvcmVfc2NyaXB0Og0KICAtICIuL3Rlc3RzL3Rlc3Qtc2hlbGxjaGVjay5zaCINCiAgLSAiLi90ZXN0cy90ZXN0LXlhbWxsaW50LnNoIg0KDQpzY3JpcHQ6ICIkVEVTVF9SVU4i"})
+    }      
+     
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        request(options, function(error, response, body) {
+          if (error) {
+            reject(error);
+          }
+          else {
+            resolve({msg: response});
+          }
+        });
+      }, 9000);
+    });
+  }
+}
